@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  MC3Ver2
+//  MC3Ver1
 //
-//  Created by Muhammad Alwan on 20/08/18.
+//  Created by Muhammad Alwan on 19/08/18.
 //  Copyright © 2018 MalasCorp. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
+    
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: "art.scnassets/SceneKit Scene.scn")!
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -35,7 +35,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -47,21 +47,37 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {return}
+        let result = sceneView.hitTest(touch.location(in: sceneView), types: [ARHitTestResult.ResultType.featurePoint])
+        guard let hitResult = result.last else {return}
+        let hitTransform = SCNMatrix4.init(hitResult.worldTransform)
+        let hitVector = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
+        createBall(position: hitVector)
+    }
+    
+    func createBall(position: SCNVector3){
+        var ballShape = SCNSphere(radius: 0.01)
+        var ballNode = SCNNode(geometry: ballShape)
+        ballNode.position = position
+        sceneView.scene.rootNode.addChildNode(ballNode)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
-
+    
     // MARK: - ARSCNViewDelegate
     
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
+    /*
+     // Override to create and configure nodes for anchors added to the view's session.
+     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+     let node = SCNNode()
      
-        return node
-    }
-*/
+     return node
+     }
+     */
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
@@ -78,3 +94,4 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
 }
+
