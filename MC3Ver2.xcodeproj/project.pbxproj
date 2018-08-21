@@ -13,6 +13,7 @@
 		BB63B58F212AC282009C9F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB63B58D212AC282009C9F7B /* Main.storyboard */; };
 		BB63B591212AC283009C9F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB63B590212AC283009C9F7B /* Assets.xcassets */; };
 		BB63B594212AC283009C9F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB63B592212AC283009C9F7B /* LaunchScreen.storyboard */; };
+		BBADE5F2212BF712003AD131 /* yuppy-tc-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBADE5F1212BF704003AD131 /* yuppy-tc-regular.otf */; };
 		FA8F0128212AC8730034EFB4 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F0127212AC8730034EFB4 /* SplashScreen.swift */; };
 		FA8F012A212AC9020034EFB4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F0129212AC9020034EFB4 /* Home.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		BB63B590212AC283009C9F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB63B593212AC283009C9F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB63B595212AC283009C9F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBADE5F1212BF704003AD131 /* yuppy-tc-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "yuppy-tc-regular.otf"; sourceTree = "<group>"; };
 		FA8F0127212AC8730034EFB4 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashScreen.swift; path = MC3Ver2/Controller/SplashScreen.swift; sourceTree = SOURCE_ROOT; };
 		FA8F0129212AC9020034EFB4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				BB63B595212AC283009C9F7B /* Info.plist */,
+				BBADE5F1212BF704003AD131 /* yuppy-tc-regular.otf */,
 				FA8F0126212AC81C0034EFB4 /* Model */,
 				FA8F0125212AC8080034EFB4 /* Support */,
 				FA8F0124212AC8020034EFB4 /* Controller */,
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBADE5F2212BF712003AD131 /* yuppy-tc-regular.otf in Resources */,
 				BB63B58A212AC282009C9F7B /* art.scnassets in Resources */,
 				BB63B594212AC283009C9F7B /* LaunchScreen.storyboard in Resources */,
 				BB63B591212AC283009C9F7B /* Assets.xcassets in Resources */,
