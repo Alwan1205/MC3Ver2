@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="agriculture-blue-blue-sky-287548" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-vp-1Ny">
-                                <rect key="frame" x="67" y="284" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo splash screen" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-vp-1Ny">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -33,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgO-6s-Ntp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1518" y="37"/>
+            <point key="canvasLocation" x="-1519.2" y="36.945812807881772"/>
         </scene>
         <!--Home-->
         <scene sceneID="Abv-Ah-eue">
@@ -42,13 +42,24 @@
                     <view key="view" contentMode="scaleToFill" id="exq-8q-fMB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundhome" translatesAutoresizingMaskIntoConstraints="NO" id="YE6-ks-JOB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMi-pR-Xav">
+                                <rect key="frame" x="80" y="329" width="216" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="createlobbybutton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Uju-BR-QcX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIF-H9-pFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-753" y="37"/>
+            <point key="canvasLocation" x="-754.39999999999998" y="36.945812807881772"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -67,6 +78,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="agriculture-blue-blue-sky-287548" width="4211" height="2807"/>
+        <image name="backgroundhome" width="375" height="812"/>
+        <image name="createlobbybutton" width="216" height="72"/>
+        <image name="logo splash screen" width="375" height="812"/>
     </resources>
 </document>
