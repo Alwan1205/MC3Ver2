@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-sl-MUw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo splash screen" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-sl-MUw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgO-6s-Ntp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1519.2" y="36.945812807881772"/>
+            <point key="canvasLocation" x="-1519" y="16"/>
         </scene>
         <!--Home-->
         <scene sceneID="Abv-Ah-eue">
@@ -56,11 +56,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMi-pR-Xav">
-                                <rect key="frame" x="80" y="329" width="216" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95w-7B-VRr">
+                                <rect key="frame" x="79" y="335" width="216" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="createlobbybutton"/>
+                                <state key="normal" image="create lobby button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-O0-Smq">
+                                <rect key="frame" x="79" y="445" width="216" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="joinlobbybutton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqV-iq-dfR">
+                                <rect key="frame" x="96" y="555" width="183" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tutorialbutton"/>
+                                <connections>
+                                    <action selector="tutorialButton:" destination="Zl7-Cd-XRE" eventType="touchUpInside" id="wqa-vy-3OL"/>
+                                    <segue destination="SMw-Zm-wbR" kind="show" identifier="gototutorial" id="D7d-7S-cAz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gototutorfirstbutton" translatesAutoresizingMaskIntoConstraints="NO" id="qan-y8-7O0">
+                                <rect key="frame" x="27" y="604" width="320" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Uju-BR-QcX"/>
@@ -68,7 +86,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIF-H9-pFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754.39999999999998" y="36.945812807881772"/>
+            <point key="canvasLocation" x="-791" y="16"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="gab-2n-S8c">
+            <objects>
+                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" hidesBottomBarWhenPushed="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zli-yy-ht5" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jho-4a-K0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1519" y="797"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="QJ5-PP-78r">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="SMw-Zm-wbR" customClass="Tutorial" customModule="MC3Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="06v-dZ-pHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H29-2x-Z44">
+                                <rect key="frame" x="16" y="755" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="backButton:" destination="SMw-Zm-wbR" eventType="touchUpInside" id="pMm-gE-CdN"/>
+                                    <segue destination="Zl7-Cd-XRE" kind="show" identifier="backtohome" id="bFF-Yp-qU6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8PJ-h6-WuA"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QG0-Fr-tK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791" y="798"/>
+        </scene>
+        <!--Content Holder-->
+        <scene sceneID="eXj-tw-UJd">
+            <objects>
+                <viewController storyboardIdentifier="ContentHolder" hidesBottomBarWhenPushed="YES" id="Yif-Ur-KcU" customClass="ContentHolder" customModule="MC3Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Vm-PR-VDD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYK-Yg-vlP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="w7b-N7-IaF"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="myImageView" destination="BYK-Yg-vlP" id="E3r-pd-32L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pr7-kD-jDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791.20000000000005" y="1468.9655172413793"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gcj-rR-PlX">
@@ -143,8 +223,15 @@
     <resources>
         <image name="BackgroundMerah" width="375" height="812"/>
         <image name="DialogBox" width="328" height="390"/>
+        <image name="backButton" width="40" height="40"/>
         <image name="backgroundhome" width="375" height="812"/>
-        <image name="createlobbybutton" width="216" height="72"/>
+        <image name="create lobby button" width="216" height="72"/>
+        <image name="gototutorfirstbutton" width="300" height="99"/>
+        <image name="joinlobbybutton" width="216" height="72"/>
         <image name="logo splash screen" width="375" height="812"/>
+        <image name="tutorialbutton" width="183" height="57"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bFF-Yp-qU6"/>
+    </inferredMetricsTieBreakers>
 </document>

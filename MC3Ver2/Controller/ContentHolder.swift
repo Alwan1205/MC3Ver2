@@ -1,22 +1,26 @@
 //
-//  Home.swift
+//  ContentHolder.swift
 //  MC3Ver2
 //
-//  Created by Davin Pratama on 20/08/18.
+//  Created by Davin Pratama on 22/08/18.
 //  Copyright © 2018 MalasCorp. All rights reserved.
 //
 
 import UIKit
 
-class Home: UIViewController {
+class ContentHolder: UIViewController {
 
-    @IBAction func tutorialButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "gototutorial", sender: self)
-    }
+    @IBOutlet weak var myImageView: UIImageView!
+    
+    var imageFileName: String!
+    var pageIndex: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        myImageView.image = UIImage(named: imageFileName)
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,6 +16,9 @@
 		BBADE5F2212BF712003AD131 /* yuppy-tc-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBADE5F1212BF704003AD131 /* yuppy-tc-regular.otf */; };
 		FA8F0128212AC8730034EFB4 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F0127212AC8730034EFB4 /* SplashScreen.swift */; };
 		FA8F012A212AC9020034EFB4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F0129212AC9020034EFB4 /* Home.swift */; };
+		FA8F0132212D5A820034EFB4 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F0131212D5A820034EFB4 /* Tutorial.swift */; };
+		FA8F0134212D5BBE0034EFB4 /* ContentHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F0133212D5BBE0034EFB4 /* ContentHolder.swift */; };
+		FA8F0136212E953A0034EFB4 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F0135212E953A0034EFB4 /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		BBADE5F1212BF704003AD131 /* yuppy-tc-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "yuppy-tc-regular.otf"; sourceTree = "<group>"; };
 		FA8F0127212AC8730034EFB4 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashScreen.swift; path = MC3Ver2/Controller/SplashScreen.swift; sourceTree = SOURCE_ROOT; };
 		FA8F0129212AC9020034EFB4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FA8F0131212D5A820034EFB4 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		FA8F0133212D5BBE0034EFB4 /* ContentHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHolder.swift; sourceTree = "<group>"; };
+		FA8F0135212E953A0034EFB4 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +91,10 @@
 		FA8F0124212AC8020034EFB4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA8F0133212D5BBE0034EFB4 /* ContentHolder.swift */,
 				FA8F0127212AC8730034EFB4 /* SplashScreen.swift */,
 				FA8F0129212AC9020034EFB4 /* Home.swift */,
+				FA8F0131212D5A820034EFB4 /* Tutorial.swift */,
 				BB63B58B212AC282009C9F7B /* ViewController.swift */,
 			);
 			path = Controller;
@@ -104,6 +112,7 @@
 		FA8F0126212AC81C0034EFB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA8F0135212E953A0034EFB4 /* GlobalVariables.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,7 +193,10 @@
 				FA8F0128212AC8730034EFB4 /* SplashScreen.swift in Sources */,
 				BB63B58C212AC282009C9F7B /* ViewController.swift in Sources */,
 				FA8F012A212AC9020034EFB4 /* Home.swift in Sources */,
+				FA8F0134212D5BBE0034EFB4 /* ContentHolder.swift in Sources */,
+				FA8F0136212E953A0034EFB4 /* GlobalVariables.swift in Sources */,
 				BB63B588212AC282009C9F7B /* AppDelegate.swift in Sources */,
+				FA8F0132212D5A820034EFB4 /* Tutorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 933M28RU85;
+				DEVELOPMENT_TEAM = 73ZHNK2YB8;
 				INFOPLIST_FILE = MC3Ver2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -347,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 933M28RU85;
+				DEVELOPMENT_TEAM = 73ZHNK2YB8;
 				INFOPLIST_FILE = MC3Ver2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
